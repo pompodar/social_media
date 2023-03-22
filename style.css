@@ -1,0 +1,29 @@
+.data {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.data1 {
+    display: flex;
+    flex-direction: column-reverse;
+    background: red;
+    position: fixed;
+    top: 10%;
+    left: 10%;
+}
+
+.userName {
+    font-weight: bold;
+}
+
+img {
+    width: 50px;
+}
+
+#message, #messageBtn {
+    display: none;
+}
+
+.block {
+    display: block;
+}
