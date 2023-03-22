@@ -147,9 +147,6 @@ uploadBytes(mountainsRef, file).then((snapshot) => {
             post: message.value,
             image: url
         });
-
-    // const img = document.getElementById('myimg');
-    // img.setAttribute('src', url);
   })
   .catch((error) => {
     console.log(error);
@@ -222,9 +219,6 @@ uploadBytes(mountainsRef, file).then((snapshot) => {
   getDownloadURL(heck(storage, file.name))
   .then((url) => {
     console.log(url);
-
-    // const img = document.getElementById('myimg');
-    // img.setAttribute('src', url);
   })
   .catch((error) => {
     console.log(error);
@@ -233,29 +227,6 @@ uploadBytes(mountainsRef, file).then((snapshot) => {
 
 });
 })
-
-//
-
-// let kl = 3;
-// kl = 6;
-
-// let l = "3";
-// console.log(kl);
-
-// let arr = [1, 2, 4];
-// console.log(arr[1]);
-
-
-
-// let str = "5";
-
-// str = "6";
-
-// console.log("помилки не повинно бути", str);
-
-
-
-
 
     </script>
 </body>
