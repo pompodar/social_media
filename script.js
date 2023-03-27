@@ -1,19 +1,3 @@
- // Import the functions you need from the SDKs you need
- import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js";
- import { getDatabase, set, update, ref ,push, child, onValue, get} from
- "https://www.gstatic.com/firebasejs/9.6.2/firebase-database.js";
- import { getStorage, ref as heck, uploadBytes, getDownloadURL } from 'https://www.gstatic.com/firebasejs/9.6.2/firebase-storage.js';
-
- const firebaseConfig = {
- apiKey: "AIzaSyDO4jPM5gRhvtKvPo05hrWlDz7hOirTQww",
- authDomain: "trivia-for-two.firebaseapp.com",
- projectId: "trivia-for-two",
- storageBucket: "trivia-for-two.appspot.com",
- messagingSenderId: "194595752794",
- appId: "1:194595752794:web:c6ea94b7350bfe3f46c163",
- databaseURL: "https://trivia-for-two-default-rtdb.europe-west1.firebasedatabase.app"
-};
-
  // Initialize Firebase
  const app = initializeApp(firebaseConfig);
  const database = getDatabase(app);
