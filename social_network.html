@@ -44,8 +44,8 @@
 
 
         const starCountRef1 = ref(database, 'posts');
-    onValue(starCountRef1, (snapshot) => {
-        snapshot.forEach(childSnapshot => {
+    onValue(starCountRef1, snapshot => {
+        snapshot.forEach((childSnapshot) => {
             console.log(childSnapshot.val());
             const name = childSnapshot.val().name;
             const key = childSnapshot.key;
@@ -225,5 +225,6 @@ uploadBytes(mountainsRef, file).then((snapshot) => {
 })
 //vitaly was here!
     </script>
+    <script src="" type></script>
 </body>
 </html>
