@@ -25,5 +25,8 @@ img {
 }
 
 .block {
-    display: block;
+    display: block !important;
+}
+.flex {
+    display: flex !important;
 }

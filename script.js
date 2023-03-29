@@ -74,6 +74,8 @@ onValue(starCountRef1, (snapshot) => {
 const btn = document.getElementById("btn");
 const userName = document.getElementById("userName");
 const pass = document.getElementById("pass");
+const u = document.getElementById("u");
+const p = document.getElementById("p");
 
 const messageBtn = document.getElementById("messageBtn");
 const message = document.getElementById("message");
@@ -151,6 +153,10 @@ set(ref(database, 'users/' + userName.value), {
              localStorage.setItem("userAvatar", url);
 
              alert("ви зареєструвалися!");
+             messageBtn.classList.add("flex");
+             message.classList.add("flex");
+             p.classList.add("block")
+             u.classList.add("block");
 
 })
 })
