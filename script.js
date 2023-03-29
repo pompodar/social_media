@@ -52,13 +52,14 @@ onValue(starCountRef1, (snapshot) => {
      paraName1.id = "id" + key;
      paraName1.classList.add("userName");
 
+     if (counter == 0) {
+        document.querySelector('.data1').appendChild(paraName1);
+    }
      let paraPost1 = document.createElement("p");
      paraPost1.innerHTML = post1;
      document.querySelector('.data1').appendChild(paraPost1);
-
-     if (counter == 0) {
-         document.querySelector('.data1').appendChild(paraName1);
-     }
+            console.log(paraPost1);
+     
 
      counter++;
 
