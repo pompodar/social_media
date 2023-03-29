@@ -74,6 +74,9 @@ onValue(starCountRef1, (snapshot) => {
 const btn = document.getElementById("btn");
 const userName = document.getElementById("userName");
 const pass = document.getElementById("pass");
+const p = document.getElementById("p");
+const u = document.getElementById("u");
+
 
 const messageBtn = document.getElementById("messageBtn");
 const message = document.getElementById("message");
@@ -161,6 +164,10 @@ set(ref(database, 'users/' + userName.value), {
      if (passArray[index] == pass.value) {
          localStorage.setItem("userName", userName.value);
          alert("ви увійшли!");
+         p.classList.add("none");
+         u.classList.add("none");
+         messageBtn.classList.add("flex");
+         message.classList.add("flex");
      } else {
          alert("таке імя вже існує або неправильний пароль або ви не вибрали аватар!");
      }
