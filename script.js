@@ -166,6 +166,7 @@ set(ref(database, 'users/' + userName.value), {
         message.classList.add("flex");
         p.classList.add("none")
         u.classList.add("none");
+        
      } else {
          alert("таке імя вже існує або неправильний пароль або ви не вибрали аватар!");
      }
