@@ -24,8 +24,8 @@ img {
     display: none;
 }
 
-.block {
-    display: block !important;
+.none {
+    display: none;
 }
 .flex {
     display: flex !important;

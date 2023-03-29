@@ -153,11 +153,6 @@ set(ref(database, 'users/' + userName.value), {
              localStorage.setItem("userAvatar", url);
 
              alert("ви зареєструвалися!");
-             messageBtn.classList.add("flex");
-             message.classList.add("flex");
-             p.classList.add("block")
-             u.classList.add("block");
-
 })
 })
 
@@ -167,6 +162,10 @@ set(ref(database, 'users/' + userName.value), {
      if (passArray[index] == pass.value) {
          localStorage.setItem("userName", userName.value);
          alert("ви увійшли!");
+         messageBtn.classList.add("flex");
+        message.classList.add("flex");
+        p.classList.add("none")
+        u.classList.add("none");
      } else {
          alert("таке імя вже існує або неправильний пароль або ви не вибрали аватар!");
      }
